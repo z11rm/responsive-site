@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Abel";
+/* Google Fonts用のCSSを読み込み */
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container, #skills i, #contact .mail-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #skills h3 {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase, section h2, #skills h3 {
+  text-transform: uppercase; }
+
+/* Header*/
+header .top-image {
+  background-image: url("../image/img_top.jpg");
+  background-size: cover;
+  background-position: center center;
+  max-width: 768px;
+  height: 250px;
+  width: auto; }
+header .profile {
+  width: 60%;
+  margin: 0 auto;
+  padding: 60px 0;
+  clear: both; }
+header .site-title {
+  font-size: 1.8rem;
+  line-height: normal; }
+  header .site-title span {
+    display: block;
+    font-size: 4.2rem;
+    color: #14c0c9; }
+header p {
+  font-size: 1.6rem; }
+
+/* Contents*/
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#skills {
+  background-color: #bea300; }
+  #skills .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #skills h2 {
+    color: #fdfcf6;
+    margin-bottom: 60px; }
+  #skills .skill-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #skills i {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    background-color: #14c0c9;
+    font-size: 4.5rem;
+    color: #FFF;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+  #skills h3 {
+    color: #14c0c9;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+
+#contact .mail-button {
+  width: 200px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 7px 0 7px;
+  color: #fff;
+  background-color: #14c0c9;
+  border-radius: 10px; }
+
+/* Footer*/
+footer {
+  background-color: #bea300;
+  padding: 10px 0;
+  text-align: center;
+  color: #FFF; }
+
+@media (min-width: 769px) {
+  header .top-image {
+    margin: 0px;
+    max-width: 100%;
+    height: 500px; }
+
+  #skills .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #skills .skill-box {
+    margin: 0 2px; }
+
+  #contact .mail-button:visited {
+    background-color: #0f949b; }
+  #contact .mail-button:hover {
+    background-color: #0f949b; } }
+
+/*# sourceMappingURL=style.css.map */
